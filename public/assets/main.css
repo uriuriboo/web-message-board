@@ -128,7 +128,7 @@ p {
     max-width: 200px;
 }
 .input-submit-button:hover {
-    background-color: #333333;
+    background-color: #ffffff;
     border: 2px solid #59b1eb;
     color: #59b1eb;
 }
@@ -156,7 +156,7 @@ p {
 .message-title .spacer {
     flex-grow: 1;
 }
-@media screen and (min-width: 500px){
+@media screen and (min-width: 500px) {
     .message-title {
         flex-direction: row;
         align-items: end;
