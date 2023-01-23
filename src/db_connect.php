@@ -11,8 +11,8 @@ try {
     }
     else {
         $dbHost = getenv('DB_HOST');
-        $dbPort = getenv('BD_PORT');
-        $dbName = getenv('BD_NAME');
+        $dbPort = getenv('DB_PORT');
+        $dbName = getenv('DB_NAME');
         $dbUser = getenv('DB_USER');
         $dbPass = getenv('DB_PASS');
     }
