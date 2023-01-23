@@ -1,3 +1,12 @@
+<?php
+require_once(__DIR__ . '/../src/db_connect.php');
+
+if (isset($_POST['action_type']) && $_POST['action_type']) {
+    if ($_POST["action_type"] === 'insert') {
+        require_once(__DIR__ . '/../src/insert_message.php');
+    }
+}
+?>
 <!DOCTYPE html>
 <html>
 
@@ -30,22 +39,6 @@
         </div>
         <hr class="page-divider" />
         <div class="message-list-cover">
-            <small>
-                1 件の投稿
-            </small>
-            <div class="message-item">
-                <div class="message-title">
-                    <div>イチロー</div>
-                    <small>2022-01-01 00:00:00</small>
-                    <div class="spacer"></div>
-                    <form action="/" method="post" style="text-align:right">
-                        <input type="hidden" name="id" value="" />
-                        <input type="hidden" name="action_type" value="delete" />
-                        <button type="submit" class="message-delete-button">削除</button>
-                    </form>
-                </div>
-                <p class="message-line">明けましておめでとうございます</p>
-            </div>
         </div>
     </div>
 </body>
