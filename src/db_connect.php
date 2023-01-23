@@ -17,7 +17,7 @@ try {
         $dbPass = getenv('DB_PASS');
     }
     $dsn = "mysql:dbname=$dbName;host=$dbHost:$dbPort";
-    $dnh = new PDO($dsn, $dbUser, $dbPass);
+    $dbh = new PDO($dsn, $dbUser, $dbPass);
 }
 catch (PDOException $e) {
     echo 'データベース接続失敗';
