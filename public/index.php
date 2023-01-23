@@ -2,7 +2,7 @@
 require_once(__DIR__ . '/../src/db_connect.php');
 
 if (isset($_POST['action_type']) && $_POST['action_type']) {
-    if ($_POST["action_type"] === 'insert') {
+    if ($_POST['action_type'] === 'insert') {
         require_once(__DIR__ . '/../src/insert_message.php');
     }
 }
